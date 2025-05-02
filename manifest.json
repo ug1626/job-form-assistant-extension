@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Form Assistant",
+  "version": "1.0",
+  "description": "求人入力を自動化する拡張機能",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://hrbc-jp.porterscloud.com/*"
+  ],
+  "action": {
+    "default_popup": "dist/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hrbc-jp.porterscloud.com/*"],
+      "js": ["dist/content-scripts/form-filler.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "dist/background/background.js"
+  }
+} 

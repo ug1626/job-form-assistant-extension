@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 設定ファイル
+src/config.ts
+
+# その他の一般的な除外
+*.log

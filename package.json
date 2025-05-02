@@ -1,0 +1,30 @@
+{
+  "name": "job-form-assistant-extension",
+  "version": "1.0.0",
+  "description": "求人入力を自動化する拡張機能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js && copyfiles -u 1 \"src/**/*.html\" dist",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ug1626/job-form-assistant-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ug1626/job-form-assistant-extension/issues"
+  },
+  "homepage": "https://github.com/ug1626/job-form-assistant-extension#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.260",
+    "copyfiles": "^2.4.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
+  }
+}
